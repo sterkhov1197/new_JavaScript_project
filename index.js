@@ -19,3 +19,5 @@ console.log(newObject.nameStreet,newObject.numStreet);*/
 let variable ="Alex";
 variable = 12;
 console.log(variable);
+
+window.console.log("Alex")
