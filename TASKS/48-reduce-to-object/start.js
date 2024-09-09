@@ -34,6 +34,16 @@ const inputProducts = [
   },
 ]
 
+function quantitiesByCategories(products){
+  return products.reduce((previousValue, currentValue, index)=>{
+    const {category, quantity}=currentValue
+
+    previousValue[category]=(previousValue[category]|| 0)+quantity
+
+    return previousValue;
+  },{})
+}
+
 console.log(quantitiesByCategories(inputProducts))
 /* {
   Accessories: 3,
